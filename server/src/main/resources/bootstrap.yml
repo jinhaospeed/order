@@ -23,7 +23,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 1000
+            timeoutInMilliseconds: 3000
     getProductInfoList:
       execution:
         isolation:
@@ -32,3 +32,6 @@ hystrix:
 feign:
   hystrix:
     enabled: true
+logging:
+  level:
+    org.springframework.cloud.netflix.feign: debug
